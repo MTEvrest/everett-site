@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/everett-site/static/css/main.073c9b0a.css",
-    "main.js": "/everett-site/static/js/main.b0432d5c.js",
+    "main.js": "/everett-site/static/js/main.0a2f7954.js",
     "static/js/787.f8a0dea2.chunk.js": "/everett-site/static/js/787.f8a0dea2.chunk.js",
     "index.html": "/everett-site/index.html",
     "main.073c9b0a.css.map": "/everett-site/static/css/main.073c9b0a.css.map",
-    "main.b0432d5c.js.map": "/everett-site/static/js/main.b0432d5c.js.map",
+    "main.0a2f7954.js.map": "/everett-site/static/js/main.0a2f7954.js.map",
     "787.f8a0dea2.chunk.js.map": "/everett-site/static/js/787.f8a0dea2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.b0432d5c.js"
+    "static/js/main.0a2f7954.js"
   ]
 }

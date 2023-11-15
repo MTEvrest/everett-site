@@ -4,7 +4,7 @@ const Projects = () => {
     return (
         <div>
             <h1>
-                WIP About
+                WIP Projects
             </h1>
         </div>
     );

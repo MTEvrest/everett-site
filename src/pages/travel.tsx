@@ -4,7 +4,7 @@ const Travel = () => {
     return (
         <div>
             <h1>
-                WIP About
+                WIP Travel
             </h1>
         </div>
     );

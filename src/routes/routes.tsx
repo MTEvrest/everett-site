@@ -10,23 +10,21 @@ export const routes = [
     {
         path: `/`,
         element: <AppLayout content={<Home/>} />,
-        children: [
-            {
-                path: `about`,
-                element: <AppLayout content={<About/>}/>
-            }
-        ]
     },
     {
-        path: `/sandbox`,
+        path: `about`,
+        element: <AppLayout content={<About/>}/>
+    },
+    {
+        path: `sandbox`,
         element: <AppLayout content={<Sandbox/>}/>
     },
     {
-        path: `${urlSetPath}/travel`,
+        path: `travel`,
         element: <AppLayout content={<Travel/>}/>
     },
     {
-        path: `${urlSetPath}/projects`,
+        path: `projects`,
         element: <AppLayout content={<Projects/>}/>
     }
 ];

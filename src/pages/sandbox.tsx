@@ -4,7 +4,7 @@ const Sandbox = () => {
     return (
         <div>
             <h1>
-                WIP About
+                WIP Sandbox
             </h1>
         </div>
     );

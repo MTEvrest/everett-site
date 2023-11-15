@@ -1,22 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route }
-    from 'react-router-dom';
-import Home from './pages';
-import About from './pages/about';
-import Navbar from './components/Navbar';
+import { RouterProvider, createHashRouter }from 'react-router-dom';
+import { routes } from './routes/routes';
+
+const router = createHashRouter(routes);
 
 function App() {
+  console.log(router.routes);
   return (
-    <Router>
-            <Navbar />
-            <Routes>
-                //@ts-ignore
-                <Route path='/' element={<Home />} />
-                <Route path='/about' element={<About />} />
-            </Routes>
-        </Router>
+    <RouterProvider router={router} />
   );
 }
 

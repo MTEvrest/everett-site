@@ -60,7 +60,7 @@ const Home = () => {
           random: true,
           straight: false,
           //direction: "left",
-          drift: -0.4,
+          drift: {max: -0.3, min: -0.33},
           outModes: "destroy",
           speed: 0.01,
           vibrate: true,

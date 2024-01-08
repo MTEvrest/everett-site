@@ -9,7 +9,7 @@ const urlSetPath = 'everett-site'
 export const routes = [
     {
         path: `/`,
-        element: <AppLayout content={<Home/>} />,
+        element: <Home/>,
     },
     {
         path: `about`,

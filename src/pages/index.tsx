@@ -3,6 +3,9 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import type { Container } from "@tsparticles/engine";
 import { loadAll } from "@tsparticles/all";
 import generateClouds from "../helpers/cloudGenerator";
+import LinkedInImg from "../assets/LinkedIn";
+import GitImg from "../assets/Github";
+import ResumeImg from "../assets/Resume";
 //Game theme throughout website
 //Take insipration from
 //https://aakash-sharma.netlify.app/
@@ -45,6 +48,10 @@ const Home = () => {
         },
         opacity: 0.85,
       },
+      fullScreen: {
+        enable: true,
+        zIndex: -1,
+      },
       fpsLimit: 60,
       particles: {
         attract: {
@@ -83,11 +90,35 @@ const Home = () => {
 
   if (init) {
     return (
-      <Particles
-        id="tsparticles"
-        //@ts-ignore
-        options={options}
-      />
+      <div>
+        <Particles
+          id="tsparticles"
+          className="particles"
+          //@ts-ignore
+          options={options}
+        />
+        <div className="info">
+          <h1 className="name">Everett White</h1>
+          <h2 className="title">Software Engineer</h2>
+          <div className="socials">
+            <div className="imgBox">
+              <a href="https://www.linkedin.com/in/everett-white/" target="_blank">
+                <LinkedInImg/>
+              </a>
+            </div>
+            <div className="imgBox">
+              <a href="https://github.com/MTEvrest" target="_blank">
+                <GitImg/>
+              </a>
+            </div>
+            <div className="imgBox">
+              <a href="https://drive.google.com/file/d/1zYiK3Se7ToLRNfX8rrjvBOnVh9mbIjzY/view?usp=sharing" target="_blank">
+                <ResumeImg/>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     );
   }
     return (

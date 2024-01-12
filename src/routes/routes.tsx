@@ -1,3 +1,4 @@
+import React from 'react';
 import Home from '../pages/index';
 import About from '../pages/about';
 import Projects from '../pages/projects';
@@ -5,7 +6,6 @@ import Sandbox from '../pages/sandbox';
 import Travel from '../pages/travel';
 import { AppLayout } from '@cloudscape-design/components';
 
-const urlSetPath = 'everett-site'
 export const routes = [
     {
         path: `/`,

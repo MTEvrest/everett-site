@@ -1,7 +1,6 @@
 import React from "react";
  
 const Travel = () => {
-    var hello = "hello";
     return (
         <div>
             <h1>

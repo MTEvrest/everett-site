@@ -1,22 +1,10 @@
-import { useEffect, useMemo, useState } from "react";
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+import React, { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import type { Container } from "@tsparticles/engine";
 import { loadAll } from "@tsparticles/all";
-import generateClouds from "../helpers/cloudGenerator";
 import LinkedInImg from "../assets/LinkedIn";
 import GitImg from "../assets/Github";
 import ResumeImg from "../assets/Resume";
-//Game theme throughout website
-//Take insipration from
-//https://aakash-sharma.netlify.app/
-//https://ashleighsimonelli.co.uk/
-//https://www.adamalston.com/
-
-//First based has a light blue sky like backgroun with ts-particle effect simluating clouds
-//Name
-//Socials
-//Job status
-//big enticing fun looking enter button
  
 const Home = () => {
     const [init, setInit] = useState(false);
@@ -34,10 +22,6 @@ const Home = () => {
       setInit(true);
     });
   }, []);
-
-  const particlesLoaded = (container: Container | undefined) => {
-    console.log(container);
-  };
 
   const options = useMemo(
     () => ({
@@ -82,7 +66,24 @@ const Home = () => {
           value: { min: 20, max: 60 },
         },
       },
-      emitters: generateClouds(),
+      emitters: {
+        direct: "left",
+        size: {
+          width: 0,
+          height: 5
+        },
+        position: {
+          x: 102,
+        },
+        rate: {
+          quantity: {min: 10, max: 50},
+        },
+        life: {
+          count: 0,
+          duration: 0.1,
+          delay: {min: 1, max: 3}
+        },
+      },
       detectRetina: true,
     }),
     []
@@ -94,7 +95,7 @@ const Home = () => {
         <Particles
           id="tsparticles"
           className="particles"
-          //@ts-ignore
+          // @ts-ignore
           options={options}
         />
         <div className="info">
@@ -102,17 +103,17 @@ const Home = () => {
           <h2 className="title">Software Engineer</h2>
           <div className="socials">
             <div className="imgBox">
-              <a href="https://www.linkedin.com/in/everett-white/" target="_blank">
+              <a href="https://www.linkedin.com/in/everett-white/" target="_blank" rel="noreferrer">
                 <LinkedInImg/>
               </a>
             </div>
             <div className="imgBox">
-              <a href="https://github.com/MTEvrest" target="_blank">
+              <a href="https://github.com/MTEvrest" target="_blank" rel="noreferrer">
                 <GitImg/>
               </a>
             </div>
             <div className="imgBox">
-              <a href="https://drive.google.com/file/d/1zYiK3Se7ToLRNfX8rrjvBOnVh9mbIjzY/view?usp=sharing" target="_blank">
+              <a href="https://drive.google.com/file/d/1zYiK3Se7ToLRNfX8rrjvBOnVh9mbIjzY/view?usp=sharing" target="_blank" rel="noreferrer"> 
                 <ResumeImg/>
               </a>
             </div>

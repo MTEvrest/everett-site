@@ -1,10 +1,8 @@
 const generateClouds = () => {
-    let cloudGenerators = [];
-    const numberGenerators = Math.max(4, Math.ceil(Math.random() * 6));
-    //const numberGenerators = 1;
-    let bottomY = 0;
+    const cloudGenerators = [];
+    //const numberGenerators = Math.max(4, Math.ceil(Math.random() * 6));
+    const numberGenerators = 1;
     for(let i = 0; i < numberGenerators; i++){
-        const topY = Math.ceil((100/numberGenerators) * (i+1));
         cloudGenerators.push(
             {
                 direct: "left",
@@ -14,15 +12,17 @@ const generateClouds = () => {
                 },
                 position: {
                   x: 102,
-                  y: Math.max(bottomY, Math.ceil(Math.random()*topY)),
                 },
                 rate: {
                   quantity: {min: 10, max: 50},
-                  delay: {min: 3, max: 8},
+                },
+                life: {
+                  count: 0,
+                  duration: 0.1,
+                  delay: {min: 1, max: 3}
                 },
               }
         )
-        bottomY = topY + 20;
     }
     return cloudGenerators;
 }

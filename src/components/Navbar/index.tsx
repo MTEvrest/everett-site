@@ -1,19 +1,16 @@
 import React from "react";
-import { Nav, NavLink, NavMenu }
-    from "./NavbarElements";
- 
+import { Nav, NavLink, NavMenu } from "./NavbarElements";
+
 const Navbar = () => {
-    return (
-        <>
-            <Nav>
-                <NavMenu>
-                    <NavLink to="everett-site/about">
-                        About
-                    </NavLink>
-                </NavMenu>
-            </Nav>
-        </>
-    );
+  return (
+    <>
+      <Nav>
+        <NavMenu>
+          <NavLink to="everett-site/about">About</NavLink>
+        </NavMenu>
+      </Nav>
+    </>
+  );
 };
- 
+
 export default Navbar;

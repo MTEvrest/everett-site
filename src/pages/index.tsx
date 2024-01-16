@@ -5,10 +5,10 @@ import { loadAll } from "@tsparticles/all";
 import LinkedInImg from "../assets/LinkedIn";
 import GitImg from "../assets/Github";
 import ResumeImg from "../assets/Resume";
- 
+
 const Home = () => {
-    const [init, setInit] = useState(false);
-    // this should be run only once per application lifetime
+  const [init, setInit] = useState(false);
+  // this should be run only once per application lifetime
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -45,13 +45,13 @@ const Home = () => {
         color: {
           value: "#ffffff",
         },
-        move:{
+        move: {
           angle: 0.5,
           enable: true,
           random: true,
           straight: false,
           //direction: "left",
-          drift: {max: -0.3, min: -0.33},
+          drift: { max: -0.3, min: -0.33 },
           outModes: "destroy",
           speed: 0.01,
           vibrate: true,
@@ -60,7 +60,7 @@ const Home = () => {
           value: 0,
         },
         opacity: {
-          value: 1
+          value: 1,
         },
         size: {
           value: { min: 20, max: 60 },
@@ -70,23 +70,23 @@ const Home = () => {
         direct: "left",
         size: {
           width: 0,
-          height: 5
+          height: 5,
         },
         position: {
           x: 102,
         },
         rate: {
-          quantity: {min: 10, max: 50},
+          quantity: { min: 10, max: 50 },
         },
         life: {
           count: 0,
           duration: 0.1,
-          delay: {min: 1, max: 3}
+          delay: { min: 1, max: 3 },
         },
       },
       detectRetina: true,
     }),
-    []
+    [],
   );
 
   if (init) {
@@ -103,18 +103,30 @@ const Home = () => {
           <h2 className="title">Software Engineer</h2>
           <div className="socials">
             <div className="imgBox">
-              <a href="https://www.linkedin.com/in/everett-white/" target="_blank" rel="noreferrer">
-                <LinkedInImg/>
+              <a
+                href="https://www.linkedin.com/in/everett-white/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <LinkedInImg />
               </a>
             </div>
             <div className="imgBox">
-              <a href="https://github.com/MTEvrest" target="_blank" rel="noreferrer">
-                <GitImg/>
+              <a
+                href="https://github.com/MTEvrest"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GitImg />
               </a>
             </div>
             <div className="imgBox">
-              <a href="https://drive.google.com/file/d/1zYiK3Se7ToLRNfX8rrjvBOnVh9mbIjzY/view?usp=sharing" target="_blank" rel="noreferrer"> 
-                <ResumeImg/>
+              <a
+                href="https://drive.google.com/file/d/1zYiK3Se7ToLRNfX8rrjvBOnVh9mbIjzY/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ResumeImg />
               </a>
             </div>
           </div>
@@ -122,11 +134,11 @@ const Home = () => {
       </div>
     );
   }
-    return (
-        <div>
-            <h1>WIP Website of Everett</h1>
-        </div>
-    );
+  return (
+    <div>
+      <h1>WIP Website of Everett</h1>
+    </div>
+  );
 };
- 
+
 export default Home;

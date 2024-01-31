@@ -130,6 +130,7 @@ const Home = () => {
               </a>
             </div>
           </div>
+          <img src="../imgs/ECoin.png"/>
         </div>
       </div>
     );

@@ -6,7 +6,6 @@ import { routes } from "./routes/routes";
 const router = createHashRouter(routes);
 
 function App() {
-  console.log(router.routes);
   return <RouterProvider router={router} />;
 }
 

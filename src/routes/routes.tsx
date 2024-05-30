@@ -1,15 +1,15 @@
 import React from "react";
-import Home from "../pages/index";
-import About from "../pages/about";
-import Projects from "../pages/projects";
-import Sandbox from "../pages/sandbox";
-import Travel from "../pages/travel";
+import Entry from "../pages/Entry";
+import About from "../pages/About";
+import Projects from "../pages/Projects";
+import Sandbox from "../pages/Sandbox";
+import Travel from "../pages/Travel";
 import { AppLayout } from "@cloudscape-design/components";
 
 export const routes = [
   {
     path: `/`,
-    element: <Home />,
+    element: <Entry />,
   },
   {
     path: `about`,

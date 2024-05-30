@@ -1,27 +1,10 @@
+* {
+  font-family: 'Press Start 2P', system-ui;
+}
+
 .App {
   position: relative;
   min-height: 100vh;
-}
-
-.particles {
-  z-index: -1 !important;
-  width: 100%;
-  height: 100%;
-}
-
-.info {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: black;
-}
-
-.socials {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .imgBox {
@@ -39,9 +22,30 @@
   cursor: pointer;
 }
 
+.info {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
 .name {
   font-size: 80px;
   margin: 5px;
+}
+
+.particles {
+  z-index: -1 !important;
+  width: 100%;
+  height: 100%;
+}
+
+.socials {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .title {

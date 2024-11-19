@@ -36,6 +36,10 @@
   margin: 5px;
 }
 
+p {
+  text-align: center;
+}
+
 .particles {
   z-index: -1 !important;
   width: 100%;

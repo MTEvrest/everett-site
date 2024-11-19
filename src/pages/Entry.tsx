@@ -32,32 +32,44 @@ const Entry = () => {
         <h1 className="name">Everett White</h1>
         <h2 className="title">Frontend Engineer</h2>
         <div className="socials">
-          <div className="imgBox">
-            <a
-              href="https://www.linkedin.com/in/everett-white/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <LinkedInImg />
-            </a>
+          <div>
+            <div className="imgBox">
+              <a
+                href="https://www.linkedin.com/in/everett-white/"
+                target="_blank"
+                rel="noreferrer"
+                aria-labelledby="linkedinLabel"
+              >
+                <LinkedInImg />
+              </a>
+            </div>
+            <p id="linkedinLabel">LinkedIn</p>
           </div>
-          <div className="imgBox">
-            <a
-              href="https://github.com/MTEvrest"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <GitImg />
-            </a>
+          <div>
+            <div className="imgBox">
+              <a
+                href="https://github.com/MTEvrest"
+                target="_blank"
+                rel="noreferrer"
+                aria-labelledby="githubLabel"
+              >
+                <GitImg />
+              </a>
+            </div>
+            <p id="githubLabel">Github</p>
           </div>
-          <div className="imgBox">
-            <a
-              href="https://drive.google.com/file/d/1zYiK3Se7ToLRNfX8rrjvBOnVh9mbIjzY/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <ResumeImg />
-            </a>
+          <div>
+            <div className="imgBox">
+              <a
+                href="https://drive.google.com/file/d/1zYiK3Se7ToLRNfX8rrjvBOnVh9mbIjzY/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+                aria-labelledby="resumeLabel"
+              >
+                <ResumeImg />
+              </a>
+            </div>
+            <p id="resumeLabel">Resume</p>
           </div>
         </div>
 

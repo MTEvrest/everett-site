@@ -61,7 +61,7 @@ const Entry = () => {
           <div>
             <div className="imgBox">
               <a
-                href="https://drive.google.com/file/d/1zYiK3Se7ToLRNfX8rrjvBOnVh9mbIjzY/view?usp=sharing"
+                href="https://drive.google.com/file/d/1zsCiULlLb1b9cXTQVhLFbVyb4sCkF0nB/view?usp=drive_link"
                 target="_blank"
                 rel="noreferrer"
                 aria-labelledby="resumeLabel"

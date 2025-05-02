@@ -1,7 +1,9 @@
+"use client"
+
 import React, { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadAll } from "@tsparticles/all";
-import cloud1 from "../assets/cloud1.svg";
+//import GitImg from "../assets/Github";
 
 const BackgroundParticles = () => {
 
@@ -52,7 +54,7 @@ const BackgroundParticles = () => {
                 type: "images",
                 options: {
                     images: {
-                        src: cloud1,
+                        src: "/assets/cloud1.svg",
                         width: 210,
                         height: 297,
                     }
